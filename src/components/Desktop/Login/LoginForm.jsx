@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import useAuth from '@/hooks/useAuth';
+import useAuth from '@/request/useAuth';
 import { toast } from 'react-toastify';
 import router from 'next/router';
 
@@ -21,10 +21,10 @@ const LoginForm = () => {
     };
 
     return (
-        <form>
-            <h1 className="text-2xl font-RedHatMedium mb-4">Inicio de Sesión</h1>
+        <form className='font-RedHatMedium '>
+            <h1 className="text-2xl mb-4">Inicio de Sesión</h1>
             <div className="mb-4">
-                <label className="block text-gray-700 font-bold mb-2">
+                <label className="block text-gray-700 mb-2">
                     Email:
                 </label>
                 <input
@@ -36,7 +36,7 @@ const LoginForm = () => {
             </div>
 
             <div className="mb-4 relative">
-                <label className="block text-gray-700 font-bold mb-2">
+                <label className="block text-gray-700 mb-2">
                     Contraseña:
                 </label>
                 <input
