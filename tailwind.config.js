@@ -12,6 +12,16 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'RedHatRegular': ['Red Hat Regular'],
+        'RedHatMedium': ['Red Hat Medium'],
+        'RedHatBold': ['Red Hat Bold'],
+      },
+      colors: {
+        purpleBroobe: '#503fe0',
+        pinkBroobe: '#e23e80',
+        grayBroobe: '#f6f4fb'
+      },
     },
   },
   plugins: [],

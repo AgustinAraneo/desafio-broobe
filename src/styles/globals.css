@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Red Hat Regular';
+    src: url('../../public/fonts/RedHatDisplay-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Medium';
+    src: url('../../public/fonts/RedHatDisplay-Medium.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Bold';
+    src: url('../../public/fonts/RedHatDisplay-Bold.ttf') format('truetype');
+    font-display: swap;
+}

@@ -3,7 +3,7 @@ import Home from './Home/Home'
 
 const Index = () => {
     return (
-        <div>
+        <div className='font-RedHatRegular'>
             <Home />
         </div>
     )

@@ -88,7 +88,7 @@ const Issues = () => {
     };
 
     return (
-        <div className="container mx-auto mt-8">
+        <div className="container mx-auto mt-8 bg-grayBroobe">
             <h1 className="text-3xl font-semibold mb-6">Listado de Issues</h1>
 
             {loading ? (
