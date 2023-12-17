@@ -1,10 +1,11 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/Desktop/Ui/Navbar';
+import { AiOutlineWarning } from 'react-icons/ai';
 import DeleteModal from '@/components/Desktop/Issues/DeleteModal';
 import ApiService from '@/request/Issues';
 import IssuesList from '@/components/Desktop/Issues/IssuesList';
-import ButtonPink from '../Ui/ButtonPink';
+import ButtonPurple from '../Ui/ButtonPurple';
 
 const IssuesMain = () => {
     const [issues, setIssues] = useState([]);
@@ -59,7 +60,7 @@ const IssuesMain = () => {
         <div className='bg-grayBroobe min-h-screen'>
             <Navbar />
             <div className="container mx-auto mt-8">
-                <h1 className="text-3xl font-RedHatBold text-purpleBroobe text-center mb-6 underline underline-offset-2">Listado de Issues</h1>
+                <h1 className="text-3xl font-RedHatBold text-purpleBroobe text-center mb-6 underline underline-offset-4">Listado de Issues</h1>
 
                 {loading ? (
                     <p className="text-gray-600">Cargando...</p>
@@ -78,15 +79,18 @@ const IssuesMain = () => {
                         )}
                     </>
                 ) : (
-                    <p className="text-gray-600">No hay Issues disponibles.</p>
+                    <div className="flex flex-col items-center">
+                        <AiOutlineWarning className="text-7xl text-red-500 mb-2" />
+                        <p className="text-gray-600 text-center text-2xl">No hay Issues disponibles.</p>
+                    </div>
                 )}
 
                 <div className="gap-x-4 flex flex-auto justify-center mt-10">
                     <div>
-                        <ButtonPink href={"/CreateIssue"} text={"Crear Issues"} />
+                        <ButtonPurple href={"/CreateIssue"} text={"Crear Issues"} />
                     </div>
                     <div>
-                        <ButtonPink href={"/UpdateIssue"} text={"Actualizar Issues"} />
+                        <ButtonPurple href={"/UpdateIssue"} text={"Actualizar Issues"} />
                     </div>
                 </div>
             </div>

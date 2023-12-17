@@ -16,7 +16,6 @@ export const loadPrioritiesAndCreateIssue = async (setPriorities, setLoading, se
 export const handleCreateIssue = async (token, name, description, priorityId, setError) => {
     try {
         await createIssue(token, name, description, priorityId);
-        // Aquí podrías redirigir al usuario a la pantalla de listado de issues o realizar otras acciones necesarias.
     } catch (error) {
         setError(error.message);
     }

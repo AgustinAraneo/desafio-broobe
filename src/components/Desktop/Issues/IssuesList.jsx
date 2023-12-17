@@ -3,7 +3,7 @@ import { getPriorityLabel, getPriorityStyles } from './IssuesCase';
 
 const IssuesList = ({ issues, handleDeleteClick }) => {
     return (
-        <div className="overflow-x-auto font-RedHatMedium shadow-lg">
+        <div className="overflow-x-auto font-RedHatMedium shadow-lg rounded">
             <table className="min-w-full text-white">
                 <thead className="bg-purpleBroobe font-RedHatBold">
                     <tr className='text-left'>

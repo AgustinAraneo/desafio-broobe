@@ -1,3 +1,4 @@
+'use client'
 import Form from '@/components/Desktop/Login/Form'
 import React from 'react'
 
