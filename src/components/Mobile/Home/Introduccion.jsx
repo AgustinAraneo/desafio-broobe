@@ -11,7 +11,6 @@ const Introduccion = () => {
                 <ButtonWhite href="/Login" text="¡Ver Proyecto!" />
             </div>
             <p>
-                Este proyecto fue desarrollado como parte de un desafío técnico para la empresa <span className="text-pinkBroobe font-RedHatBold">Broobe</span>.
                 <span className="block mt-2 ">
                     <br />
                     <span className="font-RedHatBold">Breve descripción:</span> ¿Cuáles fueron los objetivos o requisitos del desafío?

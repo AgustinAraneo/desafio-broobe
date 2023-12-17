@@ -1,7 +1,5 @@
 # Introducción al Proyecto
 
-Este proyecto fue desarrollado como parte de un desafío técnico para la empresa Broobe.
-
 **Breve descripción:** ¿Cuáles fueron los objetivos o requisitos del desafío?
 
 Este proyecto fue desarrollado como respuesta a un desafío técnico propuesto por la empresa Broobe. El objetivo principal del desafío era construir una aplicación de React que interactuara con una RESTFUL API proporcionada por la empresa. Algunos de los puntos clave abordados en la aplicación incluyen:
