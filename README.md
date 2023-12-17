@@ -40,7 +40,7 @@ Aunque no estaban inicialmente planeadas, se incorporaron las siguientes librer√
 Para ejecutar este proyecto, sigue estos pasos:
 
 ```bash
-  yarn
+  $ yarn
 ```
 
 Se ejecuta el comando "yarn" para realizar la descarga de las dependencias del proyecto.
