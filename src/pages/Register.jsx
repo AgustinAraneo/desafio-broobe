@@ -1,13 +1,17 @@
 'use client'
-import RegisterMain from '@/components/Desktop/Register/RegisterMain'
-import React from 'react'
+import ResponsiveRenderer from '@/utils/Responsive Render/ResponsiveRender';
+import RegisterDesktop from '@/components/Desktop/Register/RegisterMain';
+import RegisterMobile from '@/components/Mobile/Register/RegisterMain';
 
-const Register = () => {
+const Login = () => {
     return (
         <div>
-            <RegisterMain />
+            <ResponsiveRenderer
+                desktopComponent={<RegisterDesktop />}
+                mobileComponent={<RegisterMobile />}
+            />
         </div>
-    )
-}
+    );
+};
 
-export default Register
+export default Login;

@@ -8,7 +8,7 @@ const UpdateForm = ({
     setIssueId,
     setPriorityId,
 }) => (
-    <div className="max-w-lg mx-auto mt-8 font-RedHatMedium">
+    <div className="max-w-lg mx-auto mt-8 font-RedHatMedium max-[768px]:w-[95%] max-[768px]:mx-auto">
         <form className="">
             <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2">ID de la Issue:</label>
@@ -38,7 +38,7 @@ const UpdateForm = ({
             </div>
             <div className='flex justify-center'>
                 <button
-                    className="bg-purpleBroobe text-white hover:bg-[#3b399c] transition-all px-2 py-2 rounded text-xl font-RedHatBold"
+                    className="bg-purpleBroobe text-white hover:bg-[#3b399c] transition-all px-2 py-2 rounded text-xl font-RedHatBold max-[768px]:text-xs"
                     type="button"
                     onClick={handleUpdate}
                 >

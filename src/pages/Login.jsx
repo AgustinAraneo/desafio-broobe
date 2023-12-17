@@ -1,13 +1,17 @@
 'use client'
-import Form from '@/components/Desktop/Login/Form'
-import React from 'react'
+import ResponsiveRenderer from '@/utils/Responsive Render/ResponsiveRender';
+import DesktopForm from '@/components/Desktop/Login/Form';
+import MobileForm from '@/components/Mobile/Login/Form';
 
 const Login = () => {
     return (
         <div>
-            <Form />
+            <ResponsiveRenderer
+                desktopComponent={<DesktopForm />}
+                mobileComponent={<MobileForm />}
+            />
         </div>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;

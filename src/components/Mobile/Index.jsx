@@ -1,8 +1,11 @@
 import React from 'react'
+import Home from './Home/Home'
 
 const Index = () => {
     return (
-        <div>Bienvenidos mobile</div>
+        <div>
+            <Home />
+        </div>
     )
 }
 

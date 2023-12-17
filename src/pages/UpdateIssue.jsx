@@ -1,6 +1,8 @@
 'use client'
 import NotLogin from '@/components/Desktop/Ui/NotLogin';
-import UpdateIssueMain from '@/components/Desktop/Update Issue/UpdateIssueMain';
+import UpdateIssueDesktop from '@/components/Desktop/Update Issue/UpdateIssueMain';
+import UpdateIssueMobile from '@/components/Mobile/Update Issue/UpdateIssueMain';
+import ResponsiveRenderer from '@/utils/Responsive Render/ResponsiveRender';
 import React, { useEffect, useState } from 'react';
 
 const Issues = () => {
@@ -18,7 +20,10 @@ const Issues = () => {
 
     return (
         <div>
-            <UpdateIssueMain />
+            <ResponsiveRenderer
+                desktopComponent={<UpdateIssueDesktop />}
+                mobileComponent={<UpdateIssueMobile />}
+            />
         </div>
     );
 };

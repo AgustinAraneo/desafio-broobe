@@ -17,7 +17,7 @@ const DeleteModal = ({ onConfirm, onCancel }) => {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.3 }}
-                    className="bg-purpleBroobe p-4 rounded-md shadow-md w-[30%] h-auto text-white font-RedHatMedium"
+                    className="bg-purpleBroobe p-4 rounded-md shadow-md w-[30%] max-[768px]:w-[95%] h-auto text-white font-RedHatMedium"
                 >
                     <p className='text-xl text-center mt-4 '>¿Estás seguro de que deseas eliminar este Issue?</p>
                     <div className="my-4 flex justify-center space-x-4">
