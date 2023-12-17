@@ -41,6 +41,24 @@ const Introduccion = () => {
                     <span className='font-RedHatBold'>Interacción para borrar Issues:</span> Agregado de una interacción en la pantalla de listado de issues para que los usuarios puedan eliminar issues con confirmación.
                 </li>
             </ul>
+            <h2 className="text-xl font-RedHatBold mt-6">Características Adicionales ✨</h2>
+            <ul className="list-disc pl-6 mt-2">
+                <li>
+                    <strong>Clean Code con SOLID:</strong> Se aplicaron principios SOLID para mejorar la estructura y mantenibilidad del código, promoviendo prácticas de desarrollo limpio.
+                </li>
+                <li>
+                    <strong>Responsive Design:</strong> El proyecto es completamente responsive, lo que significa que se puede acceder desde dispositivos móviles y computadoras de escritorio sin comprometer la experiencia del usuario.
+                </li>
+                <li>
+                    <strong>Hosteado en Vercel:</strong> La aplicación está hosteada en Vercel y se puede acceder en línea desde la siguiente URL: <a href="https://desafio-broobe.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-pinkBroobe underline font-RedHatMedium">https://desafio-broobe.vercel.app/</a>
+                </li>
+                <li>
+                    <strong>Validación de URLs:</strong> Se implementó una validación en las URLs para garantizar que solo se pueda acceder a las rutas privadas con el token de inicio de sesión.
+                </li>
+                <li>
+                    <strong>Comunicación entre Páginas:</strong> Todo el código se diseñó para mantener una interacción constante entre las páginas, asegurando una experiencia de usuario fluida y coherente en toda la aplicación.
+                </li>
+            </ul>
             <h2 className="text-xl font-RedHatBold mt-6">Tecnologías Adicionales Utilizadas 💻</h2>
             <ul className="list-disc pl-6 mt-2">
                 <li>

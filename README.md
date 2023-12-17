@@ -1,40 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Introducción al Proyecto
 
-## Getting Started
+Este proyecto fue desarrollado como parte de un desafío técnico para la empresa Broobe.
 
-First, run the development server:
+**Breve descripción:** ¿Cuáles fueron los objetivos o requisitos del desafío?
+
+Este proyecto fue desarrollado como respuesta a un desafío técnico propuesto por la empresa Broobe. El objetivo principal del desafío era construir una aplicación de React que interactuara con una RESTFUL API proporcionada por la empresa. Algunos de los puntos clave abordados en la aplicación incluyen:
+
+- **Pantalla de Login:** Implementación de una pantalla pública con un formulario para iniciar sesión, que utiliza el endpoint de autenticación Bearer Token.
+- **Registro de Usuario:** Creación de una pantalla pública con un formulario para registrar nuevos usuarios mediante el endpoint correspondiente.
+- **Listar Issues:** Desarrollo de una pantalla que permite a los usuarios autenticados ver todas las issues en un listado, utilizando el endpoint respectivo.
+- **Crear un Issue:** Implementación de una pantalla para que los usuarios autenticados puedan cargar nuevas issues mediante un formulario.
+- **Actualizar un Issue:** Creación de una pantalla para que los usuarios autenticados puedan editar una issue, cambiando su prioridad.
+- **Interacción para borrar Issues:** Agregado de una interacción en la pantalla de listado de issues para que los usuarios puedan eliminar issues con confirmación.
+
+## Características Adicionales ✨
+
+- **Clean Code con SOLID:** Se aplicaron principios SOLID para mejorar la estructura y mantenibilidad del código, promoviendo prácticas de desarrollo limpio.
+- **Responsive Design:** El proyecto es completamente responsive, lo que significa que se puede acceder desde dispositivos móviles y computadoras de escritorio sin comprometer la experiencia del usuario.
+- **Hosteado en Vercel:** La aplicación está hosteada en Vercel y se puede acceder en línea desde la siguiente URL: [https://desafio-broobe.vercel.app/](https://desafio-broobe.vercel.app/)
+- **Validación de URLs:** Se implementó una validación en las URLs para garantizar que solo se pueda acceder a las rutas privadas con el token de inicio de sesión.
+- **Comunicación entre Páginas:** Todo el código se diseñó para mantener una interacción constante entre las páginas, asegurando una experiencia de usuario fluida y coherente en toda la aplicación.
+
+## Tecnologías Adicionales Utilizadas 💻
+
+- **Next.js:** Se eligió Next.js para este proyecto con la premisa de utilizar Client-Side Rendering (CSR). La decisión de seguir esta ruta se basó en la necesidad de forzar a Next.js a realizar el procesamiento desde el lado del cliente, proporcionando una experiencia más dinámica y optimizada para ciertos componentes. Además, se optó por este framework por su facilidad de enrutamiento y su extensión de las capacidades de React.
+- **Tailwind.css:** Opté por Tailwind CSS por su enfoque utilitario y su capacidad para acelerar el desarrollo mediante estilos predefinidos. La configuración sencilla y la flexibilidad para personalizar estilos hacen que sea una elección eficiente.
+
+## Librerías Adicionales Utilizadas
+
+Aunque no estaban inicialmente planeadas, se incorporaron las siguientes librerías para mejorar la experiencia de usuario:
+
+- **axios:** Utilizado para realizar las peticiones a los Endpoints.
+- **react-icons:** Empleado para integrar iconos y mejorar la interfaz de usuario.
+- **react-toastify:** Utilizado para el manejo de notificaciones en los apartados de Login, Register, Create Issue y Update Issue.
+- **framer-motion:** Utilizado para realizar la animación del modal de Delete Issue.
+
+## Dependencias y Configuración 📖
+
+Para ejecutar este proyecto, sigue estos pasos:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Se ejecuta el comando "yarn" para realizar la descarga de las dependencias del proyecto.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Despliegue 🚀
+Sigue estos pasos para desplegar la aplicación:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+  $ yarn dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Se ejecuta el comando "yarn dev" para levantar el proyecto de forma local.
+Puedes visitar la aplicación abriendo tu navegador y accediendo a: http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Autor 😎
 
-To learn more about Next.js, take a look at the following resources:
+- [@AgustinAraneo](https://www.github.com/AgustinAraneo)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
